@@ -33,14 +33,14 @@ Major Components:
 	    > Daily hours per day
 	    > Pie Chart: Completed / In Progress / Locked
     > Activity History
-	    > Last Lesson in Progress
-	    > Last Assessment in Progress
+	    > Last 3 Lesson in Progress
+	    > Last 3 Assessment in Progress
     > floating icon as sidebar (lessons page, interactive games page, settings page)
 3. Lessons Page
     > Lesson Title
     > Combination of Texts and Images
 	    > Start with Image related to lesson
-	    > up to 4 images per lesson
+	    > up to 3 images per lesson
     > Sources of Information (to be cited every after 'lesson')
         > web links (articles, websites, journals, etc.)
         > search the internet and scrape its relevant content based on the selected topics
@@ -63,21 +63,25 @@ Major Components:
 	    > Maximal: 30 questions
 	    - can exit and save progress
 5. Miscellaneouses
-    > Loading Page (simple rotating icon with  'Loading' text)
+    > Loading Page (simple rotating icon with  'Loading' text, main use for content loading)
     > Icon design (user-defined, write code to place it)
     > Screen Splash (shown upon screen load)
 	> minimal animations, information or warning popups appear at bottom
 6. Settings Page
     > System color theme (system light / dark)
     > user log out (routes back to log-in page)
-    > Account deletion (Routes back to account creation page)
+    > Account deletion (Routes back to account creation page, delete account from database)
 Topics to Include:
 1. 1987 Philippine Constitution (all articles)
 2. Presidents of 5th Republic of the Phil. and their history (1987 - Present)
 3. Republic Acts (latest 10 signed, detailed)
-
+#
+Additionals: If in case web scraping is not feasible, opt to store questions in database as fallback.
+Warning: We have a few hours left before presentation, so prioritize development speed. 
+#
 Language Stack:
     Frontend: React Native
     Backend: Node.js / Express
     Database: MongoDB via MongoDB Atlas
 	Base Framework (Emulation): Expo
+
