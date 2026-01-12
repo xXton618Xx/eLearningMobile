@@ -1,0 +1,66 @@
+Instruction: Read the contents of this file, and follow the requirements as intended
+
+Game-Based E-Learning Application for Philippine Law
+Context: A game-based learning application for the Philippine Law, dedicated for students of Political
+Science and the students of Law themselves. This application aims to provide the students an easier
+and more engaging way to explore, analyze, and manifest their desire in becoming a Lawyer, while
+maintaining the utmost accuracy of the information present in the Philippine Law Procedures.
+
+Major Components:
+1. Sign-up / Login Page (for new and returning users)
+    > Sign-up if new user
+    > login if account logged out
+    > otherwise when app opens, display splash when on load, route to dashboard/home page
+2. Home Page (a.k.a. Dashboard)
+    > Welcome Card
+	> Welcome, 'user' if first login
+	> Welcome back, 'user' if has account
+    > General user statistics
+	    > Daily hours per day
+	    > Pie Chart: Completed / In Progress / Locked
+    > Activity History
+	    > Last Lesson in Progress
+	    > Last Assessment in Progress
+    > floating icon as sidebar (lessons page, interactive games page, settings page)
+3. Lessons Page
+    > Lesson Title
+    > Combination of Texts and Images
+	    > Start with Image related to lesson
+	    > up to 4 images per lesson
+    > Sources of Information (to be cited every after 'lesson')
+        > web links (articles, websites, journals, etc.)
+        > search the internet and scrape its relevant content based on the selected topics
+    > Post-Lesson Assessment (Identification, True or False, Multiple Choice)
+	    > Identification: accepts any-case strings of response, alphanumeric only (include '.' and '-')
+	    > Multiple Choice: 4 choices, 1 correct answer
+4. Interactive/Game Page (collective of all lessons)
+    >  Matching Type (tap-based, no line draw)
+	    > Minimal: 5 items
+	    > Maximal: 10 items
+	    - random arrangement
+    > Fill in the blanks
+	    > Identification-type (accepts any-case strings of response, alphanumeric only (include '.' and '-'))
+        > swipe left or right [True or False]
+	    > accumulate daily points, display daily:total
+    > Point-based Assessments
+	    > Minimal: 10 questions
+	    > Manageable: 20 questions
+	    > Maximal: 30 questions
+	    - can exit and save progress
+5. Miscellaneouses
+    > Loading Page (simple rotating icon with  'Loading' text)
+    > Icon design (user-defined, write code to place it)
+    > Screen Splash (shown upon screen load)
+6. Settings Page
+    > System color theme (system light / dark)
+    > user log out (routes back to log-in page)
+    > Account deletion (Routes back to account creation page)
+Topics to Include:
+1. 1987 Philippine Constitution (all articles)
+2. Presidents of 5th Republic of the Phil. and their history (1987 - Present)
+3. Republic Acts (latest 10 signed, detailed)
+
+Language Stack:
+    Frontend: React Native
+    Backend: Node.js / Express
+    Database: MongoDB via MongoDB Atlas
